@@ -1,0 +1,47 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+main{
+    &.empty{
+        width: 100vw;
+        height: 100vh;
+        background: var(--icon-static-color-payments);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../assets/images/aloha_bg.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        .empty-content{
+            text-align: center;
+            img{
+                width: 50%;
+                margin-bottom: 2.5rem;
+                @include device(mobile){
+                    width: 100%;
+                }
+            }
+            h1{
+                font: $global-display-5xl;
+                margin-bottom: .5rem;
+            }
+            p{
+                font: $global-body-2xl;
+                margin-bottom: 2rem;
+            }
+            .btn-tertiary{
+                background: var(--background-color-tertiary);
+                color: var(--typography-color-inverted);
+                border-radius: 76px;
+                font: $global-label-m;
+                padding: 0.75rem 2rem;
+            }
+        }
+    }
+}

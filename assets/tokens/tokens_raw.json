@@ -1,0 +1,763 @@
+{
+  "global": {
+    "display": {
+      "5xl": {
+        "value": {
+          "fontFamily": "Maison Neue Extended",
+          "fontWeight": "Bold",
+          "lineHeight": "60",
+          "fontSize": "42",
+          "letterSpacing": "2%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "4xl": {
+        "value": {
+          "fontFamily": "Maison Neue Extended",
+          "fontWeight": "Bold",
+          "lineHeight": "46",
+          "fontSize": "32",
+          "letterSpacing": "0.8%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "3xl": {
+        "value": {
+          "fontFamily": "Maison Neue Extended",
+          "fontWeight": "Bold",
+          "lineHeight": "40",
+          "fontSize": "28",
+          "letterSpacing": "0.8%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "2xl": {
+        "value": {
+          "fontFamily": "Maison Neue Extended",
+          "fontWeight": "Bold",
+          "lineHeight": "34",
+          "fontSize": "24",
+          "letterSpacing": "0.7%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "xl": {
+        "value": {
+          "fontFamily": "Maison Neue Extended",
+          "fontWeight": "Bold",
+          "lineHeight": "30",
+          "fontSize": "21",
+          "letterSpacing": "0.6%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "l": {
+        "value": {
+          "fontFamily": "Maison Neue Extended",
+          "fontWeight": "Bold",
+          "lineHeight": "24",
+          "fontSize": "18",
+          "letterSpacing": "0.5%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    },
+    "heading": {
+      "5xl": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "64",
+          "fontSize": "42",
+          "letterSpacing": "0.5%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "4xl": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "46",
+          "fontSize": "32",
+          "letterSpacing": "0.3%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "3xl": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "40",
+          "fontSize": "28",
+          "letterSpacing": "0.3%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "2xl": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "34",
+          "fontSize": "24",
+          "letterSpacing": "0.3%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "xl": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "30",
+          "fontSize": "21",
+          "letterSpacing": "0.1%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "l": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "24",
+          "fontSize": "18",
+          "letterSpacing": "0.1%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    },
+    "label": {
+      "l": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "24",
+          "fontSize": "18",
+          "letterSpacing": "1%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "m": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "24",
+          "fontSize": "16",
+          "letterSpacing": "1%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "s": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "20",
+          "fontSize": "14",
+          "letterSpacing": "1.5%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "xs": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Demi",
+          "lineHeight": "18",
+          "fontSize": "12",
+          "letterSpacing": "2.5%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    },
+    "body": {
+      "2xl": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Book",
+          "lineHeight": "34",
+          "fontSize": "24",
+          "letterSpacing": "1%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "xl": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Book",
+          "lineHeight": "30",
+          "fontSize": "21",
+          "letterSpacing": "1%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "l": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Book",
+          "lineHeight": "26",
+          "fontSize": "18",
+          "letterSpacing": "1%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "m": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Book",
+          "lineHeight": "24",
+          "fontSize": "16",
+          "letterSpacing": "1.5%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "s": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Book",
+          "lineHeight": "20",
+          "fontSize": "14",
+          "letterSpacing": "2.5%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "xs": {
+        "value": {
+          "fontFamily": "Maison Neue",
+          "fontWeight": "Book",
+          "lineHeight": "18",
+          "fontSize": "12",
+          "letterSpacing": "2.5%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    },
+    "code": {
+      "l": {
+        "value": {
+          "fontFamily": "Fira Code",
+          "fontWeight": "Regular",
+          "lineHeight": "21",
+          "fontSize": "18",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "m": {
+        "value": {
+          "fontFamily": "Fira Code",
+          "fontWeight": "Regular",
+          "lineHeight": "24",
+          "fontSize": "16",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      },
+      "s": {
+        "value": {
+          "fontFamily": "Fira Code",
+          "fontWeight": "Regular",
+          "lineHeight": "21",
+          "fontSize": "14",
+          "letterSpacing": "0%",
+          "paragraphSpacing": "0",
+          "textDecoration": "none",
+          "textCase": "none"
+        },
+        "type": "typography"
+      }
+    }
+  },
+  "light": {
+    "fill": {
+      "background": {
+        "primary": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "#1c1d1d",
+          "type": "color"
+        },
+        "quaternary": {
+          "value": "#f1f2f4",
+          "type": "color"
+        }
+      },
+      "mute": {
+        "primary": {
+          "value": "#e8e8e8",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#fafafa",
+          "type": "color"
+        }
+      },
+      "pressed": {
+        "value": "rgba(0, 0, 0, 10%)",
+        "type": "color"
+      },
+      "overlay": {
+        "value": "rgba(28, 29, 29, 0.6)",
+        "type": "color"
+      },
+      "error": {
+        "primary": {
+          "value": "#ea001f",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#fff8f8",
+          "type": "color"
+        }
+      },
+      "product": {
+        "payments": {
+          "value": "#0081a0",
+          "type": "color"
+        },
+        "fmcg": {
+          "value": "#e52535",
+          "type": "color"
+        },
+        "daily_needs": {
+          "value": "#c85200",
+          "type": "color"
+        }
+      },
+      "active": {
+        "primary": {
+          "value": "#00880d",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#eaffea",
+          "type": "color"
+        }
+      },
+      "inactive": {
+        "primary": {
+          "value": "#bbbbbb",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#ededed",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "active": {
+        "value": "#00880d",
+        "type": "color"
+      },
+      "inactive": {
+        "value": "#bbbbbb",
+        "type": "color"
+      },
+      "focus": {
+        "value": "#1c1d1d",
+        "type": "color"
+      },
+      "mute": {
+        "primary": {
+          "value": "#e8e8e8",
+          "type": "color"
+        }
+      },
+      "pressed": {
+        "value": "rgba(0, 0, 0, 10%)",
+        "type": "color"
+      },
+      "static_white": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "error": {
+        "value": "#ea001f",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "dynamic": {
+        "default": {
+          "value": "#494a4a",
+          "type": "color"
+        },
+        "active": {
+          "value": "#00880d",
+          "type": "color"
+        },
+        "inactive": {
+          "value": "#bbbbbb",
+          "type": "color"
+        },
+        "inverted": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "error": {
+          "value": "#ea001f",
+          "type": "color"
+        }
+      },
+      "static": {
+        "transport_logistic": {
+          "value": "#00aa13",
+          "type": "color"
+        },
+        "payments": {
+          "value": "#00aed6",
+          "type": "color"
+        },
+        "fmcg": {
+          "value": "#ee2737",
+          "type": "color"
+        },
+        "daily_needs": {
+          "value": "#f06400",
+          "type": "color"
+        },
+        "news_entertainment": {
+          "value": "#df1995",
+          "type": "color"
+        },
+        "business": {
+          "value": "#93328e",
+          "type": "color"
+        },
+        "black": {
+          "value": "#1c1d1d",
+          "type": "color"
+        },
+        "white": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "inactive": {
+          "value": "#bbbbbb",
+          "type": "color"
+        }
+      }
+    },
+    "typography": {
+      "default_title": {
+        "value": "#1c1d1d",
+        "type": "color"
+      },
+      "default_body": {
+        "value": "#494a4a",
+        "type": "color"
+      },
+      "default_caption": {
+        "value": "#494a4a",
+        "type": "color"
+      },
+      "active": {
+        "value": "#00880d",
+        "type": "color"
+      },
+      "inactive": {
+        "value": "#727272",
+        "type": "color"
+      },
+      "error": {
+        "value": "#ea001f",
+        "type": "color"
+      },
+      "static_white": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "inverted": {
+        "value": "#ffffff",
+        "type": "color"
+      }
+    }
+  },
+  "dark": {
+    "fill": {
+      "active": {
+        "primary": {
+          "value": "#009c11",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#000f00",
+          "type": "color"
+        }
+      },
+      "inactive": {
+        "primary": {
+          "value": "#8e8e8e",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#363434",
+          "type": "color"
+        }
+      },
+      "background": {
+        "primary": {
+          "value": "#1c1d1d",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#333434",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "quaternary": {
+          "value": "#131517",
+          "type": "color"
+        }
+      },
+      "mute": {
+        "primary": {
+          "value": "#606161",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#242525",
+          "type": "color"
+        }
+      },
+      "pressed": {
+        "value": "rgba(255, 255, 255, 10%)",
+        "type": "color"
+      },
+      "overlay": {
+        "value": "rgba(0, 0, 0, 70%)",
+        "type": "color"
+      },
+      "error": {
+        "primary": {
+          "value": "#ff323d",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#210001",
+          "type": "color"
+        }
+      },
+      "product": {
+        "payments": {
+          "value": "#0090b1",
+          "type": "color"
+        },
+        "fmcg": {
+          "value": "#f63b46",
+          "type": "color"
+        },
+        "daily_needs": {
+          "value": "#de5c00",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "active": {
+        "value": "#009c11",
+        "type": "color"
+      },
+      "inactive": {
+        "value": "#8e8e8e",
+        "type": "color"
+      },
+      "focus": {
+        "value": "#777777",
+        "type": "color"
+      },
+      "mute": {
+        "primary": {
+          "value": "#606161",
+          "type": "color"
+        }
+      },
+      "pressed": {
+        "value": "rgba(255, 255, 255, 10%)",
+        "type": "color"
+      },
+      "static_white": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "error": {
+        "value": "#f1525f",
+        "type": "color"
+      }
+    },
+    "icon": {
+      "dynamic": {
+        "default": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "active": {
+          "value": "#009c11",
+          "type": "color"
+        },
+        "inactive": {
+          "value": "#606161",
+          "type": "color"
+        },
+        "inverted": {
+          "value": "#1c1d1d",
+          "type": "color"
+        },
+        "error": {
+          "value": "#ff323d",
+          "type": "color"
+        }
+      },
+      "static": {
+        "transport_logistic": {
+          "value": "#00aa13",
+          "type": "color"
+        },
+        "payments": {
+          "value": "#00aed6",
+          "type": "color"
+        },
+        "fmcg": {
+          "value": "#ee2737",
+          "type": "color"
+        },
+        "daily_needs": {
+          "value": "#f06400",
+          "type": "color"
+        },
+        "news_entertainment": {
+          "value": "#df1995",
+          "type": "color"
+        },
+        "business": {
+          "value": "#93328e",
+          "type": "color"
+        },
+        "black": {
+          "value": "#1c1d1d",
+          "type": "color"
+        },
+        "white": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "inactive": {
+          "value": "#606161",
+          "type": "color"
+        }
+      }
+    },
+    "typography": {
+      "default_title": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "default_body": {
+        "value": "#e8e8e8",
+        "type": "color"
+      },
+      "default_caption": {
+        "value": "#e8e8e8",
+        "type": "color"
+      },
+      "active": {
+        "value": "#009c11",
+        "type": "color"
+      },
+      "inactive": {
+        "value": "#8e8e8e",
+        "type": "color"
+      },
+      "error": {
+        "value": "#ff323d",
+        "type": "color"
+      },
+      "static_white": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "inverted": {
+        "value": "#1c1d1d",
+        "type": "color"
+      }
+    }
+  }
+}

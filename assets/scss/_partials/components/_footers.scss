@@ -1,0 +1,141 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+footer{
+    // border-top: 1px solid var(--border-color-mute-primary);
+    // margin-top: 3rem;
+    @include device(tablet){
+        margin-top: 1rem;
+    }
+    @include device(mobile){
+        margin-top: 1rem;
+    }
+    .footer-top{
+        padding: 3rem;
+        @include device(tablet){
+            padding: 2rem 1rem;
+        }
+        @include device(mobile){
+            padding: 2rem 1rem;
+        }
+    }
+    .logo-image{
+        margin-bottom: 1.5rem;
+        @include device(tablet){
+            margin-bottom: .75rem;
+        }
+        @include device(mobile){
+            margin-bottom: .75rem;
+        }
+    }
+    .social-media{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .display-l{
+            @include device(mobile){
+                font-size: 13px;
+            }
+        }
+        a{
+            padding: 0 .75rem;
+            color: var(--typography-color-default-caption);
+            text-decoration: none;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:hover{
+                color: var(--typography-color-active);
+                text-decoration: none;
+            }
+        }
+    }
+    .link-list{
+        @include device(tablet){
+            margin: 2rem 0;
+        }
+        @include device(mobile){
+            margin: 2rem 0;
+        }
+        ul{
+            list-style: none;
+            @include device(tablet){
+                padding-left: 0;
+            }
+            @include device(mobile){
+                padding-left: 0;
+            }
+            li{
+                margin-bottom: .5rem;
+                a{
+                    padding: 0 .75rem;
+                    color: var(--typography-color-default-caption);
+                    text-decoration: none;
+                    transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                        transition: all .3s ease-in-out;
+                        -moz-transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .work-with-us{
+        .btn{
+            border: none;
+            border-radius: 48px;
+            // padding: .75rem .75rem .75rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &.btn-primary{
+                background: var(--active-color-primary);
+            }
+            &.btn-fluid{
+                width: 100%;
+            }
+        }
+    }
+    .footer-bottom{
+        text-align: center;
+        padding-bottom: 2.5rem;
+        // background: var(--inactive-color-secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .made-by{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                padding: 0 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:nth-child(2){
+                    padding: 0 1px;
+                }
+                img{
+                    height: 24px;
+                    width: auto;
+                    &.love{
+                        height: 24px;
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+.home{
+    .hero{
+        background: $light-icon-static-transport-logistic;
+        padding: 2rem 0 0;
+        .content{
+            img{
+                @include device(tablet){
+                    width: auto;
+                    height: 40px;
+                }
+                @include device(mobile){
+                    width: auto;
+                    height: 20px;
+                }
+            }
+            h1{
+                font-weight: 600;
+                color: $light-typography-static-white;
+                margin-bottom: 0;
+                @include device(tablet){
+                    font-size: 48px;
+                    line-height: 60px;
+                }
+                @include device(mobile){
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+.categories{
+    .card{
+        border-radius: 24px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        text-decoration: none;
+        h5{
+            font-weight: 600;
+            margin-bottom: 0;
+            @include device(tablet){
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+        &-category{
+            @include device(tablet){
+                min-height: 266px;
+            }
+            @include device(mobile){
+                min-height: 228px;
+            }
+        }
+        &-listing{
+            overflow: hidden;
+            @include device(tablet){
+                min-height: 266px;
+            }
+            @include device(mobile){
+                // padding: 1rem;
+                text-align: start;
+            }
+            img{
+                @include device(mobile){
+                    height: 76px;
+                } 
+            }
+            .card-body{
+                @include device(tablet){
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+                @include device(mobile){
+                    padding: 1rem 1rem 1rem 2rem;
+                }
+            }
+        }
+    }
+}
+
+.sign-details{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.sign-detail{
+    section{
+        padding: 0;
+    }
+    .content-detail{
+        position: relative;
+        height: calc(100vh - 78px);
+        padding-bottom: 266px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include device(tablet){
+            padding-bottom: 450px;
+        }
+        .text{
+            text-align: center;
+            h1{
+                font-weight: 700;
+                line-height: 52px;
+                @include device(tablet){
+                    line-height: 96px;
+                    font-size: 76px;
+                    margin-bottom: 2rem;
+                }
+            }
+            h5{
+                color: $light-typography-default-caption;
+                @include device(tablet){
+                    font-size: 40px;
+                }
+            }
+        }
+        .image{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            img{
+                width: 75%;
+            }
+        }
+    }
+}
+
+.expand-collapse{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 2px 0px 20px rgb(0 0 0 / 10%);
+    width: max-content;
+    height: 50px;
+    border-radius: 28px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    font-weight: 600;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    &.top{
+        top: 0;
+        margin-top: 1rem;
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+}

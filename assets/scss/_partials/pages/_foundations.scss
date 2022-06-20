@@ -1,0 +1,25 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+main{
+    &.foundations{
+        .content{
+            .info{
+                background-color: var(--active-color-secondary);
+                border-radius: 16px;
+                padding: 24px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                span{
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}

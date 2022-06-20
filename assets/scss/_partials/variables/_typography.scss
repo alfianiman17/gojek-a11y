@@ -1,0 +1,96 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+@use "sass:map";
+@import '_variables_raw';
+
+// FUNCTION MAP DEEP GET
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+      $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+// ------------------------------------------------//
+//                    LIGHT MODE                   //
+// ------------------------------------------------//
+
+$typography: (
+    display: (
+        "5xl": $global-display-5xl,
+        "4xl": $global-display-4xl,
+        "3xl": $global-display-3xl,
+        "2xl": $global-display-2xl,
+        "xl": $global-display-xl,
+        "l": $global-display-l 
+    ),
+    heading: (
+        "5xl": $global-heading-5xl,
+        "4xl": $global-heading-4xl,
+        "3xl": $global-heading-3xl,
+        "2xl": $global-heading-2xl,
+        "xl": $global-heading-xl,
+        "l": $global-heading-l 
+    ),
+    label: (
+        "l": $global-label-l,
+        "m": $global-label-m,
+        "s": $global-label-s,
+        "xs": $global-label-xs
+    ),
+    body: (
+        "2xl": $global-body-2xl,
+        "xl": $global-body-xl,
+        "l": $global-body-l,
+        "m": $global-body-m,
+        "s": $global-body-s,
+        "xs": $global-body-xs
+    ),
+    code: (
+        "l": $global-code-l,
+        "m": $global-code-m,
+        "s": $global-code-s
+    )
+    
+);
+
+// DISPLAY
+@each $key, $val in map-get($typography, "display") {
+    .display-#{$key}{
+        font: $val;
+    }
+}
+
+// HEADING
+@each $key, $val in map-get($typography, "heading") {
+    .heading-#{$key}{
+        font: $val;
+    }
+}
+
+// LABEL
+@each $key, $val in map-get($typography, "label") {
+    .label-#{$key}{
+        font: $val;
+    }
+}
+
+// BODY
+@each $key, $val in map-get($typography, "body") {
+    .body-#{$key}{
+        font: $val;
+    }
+}
+
+// CODE
+@each $key, $val in map-get($typography, "code") {
+    .code-#{$key}{
+        font: $val;
+    }
+}

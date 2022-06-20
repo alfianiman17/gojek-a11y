@@ -1,0 +1,29 @@
+.btn{
+    margin: 0;
+    width: max-content;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding: 12px 16px;
+    font: $global-display-l;
+    height: 44px;
+    &:focus, &:focus-visible{
+        box-shadow: none;
+        outline: none;
+    }
+    &.btn-primary{
+        background: var(--active-color-primary);
+        color: var(--typography-color-static-white);
+    }
+    &.btn-secondary{
+        background: transparent;
+        border:  1.5px solid var(--border-color-active);
+        color: var(--active-color-primary);
+    }
+    &.btn-disabled{
+        background: var(--inactive-color-primary);
+        color: var(--typography-color-static-white);
+        cursor: not-allowed;
+    }
+}

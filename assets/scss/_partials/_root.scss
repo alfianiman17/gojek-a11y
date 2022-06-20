@@ -1,0 +1,151 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+// ------------------------------------------------//
+//             LIGHT/DARK MODE SWITCHER            //
+// ------------------------------------------------//
+
+@import 'variables/_colors';
+
+//converting scss variable into css variable
+:root {
+    @each $name, $color in map-get($active, "light"){
+        --active-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($inactive, "light"){
+        --inactive-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($background, "light"){
+        --background-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($mute, "light"){
+        --mute-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($pressed, "light"){
+        --#{$name}-color : #{$color};
+    }
+
+    @each $name, $color in map-get($overlay, "light"){
+        --#{$name}-color : #{$color};
+    }
+
+    @each $name, $color in map-get($error, "light"){
+        --error-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($product, "light"){
+        --product-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($border, "light"){
+        --border-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($icon_dynamic, "light"){
+        --icon-dynamic-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($icon_static, "light"){
+        --icon-static-color-#{$name} : #{$color};
+    }
+
+    @each $name, $color in map-get($typography, "light"){
+        --typography-color-#{$name} : #{$color};
+    }
+  --theme: 'light';
+}
+
+// @media(prefers-color-scheme: dark) {
+//     :root {
+//         @each $name, $color in map-get($active, "dark"){
+//             --active-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($inactive, "dark"){
+//             --inactive-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($background, "dark"){
+//             --background-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($mute, "dark"){
+//             --mute-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($pressed, "dark"){
+//             --#{$name}-color : #{$color};
+//         }
+    
+//         @each $name, $color in map-get($overlay, "dark"){
+//             --#{$name}-color : #{$color};
+//         }
+
+//         @each $name, $color in map-get($error, "dark"){
+//             --error-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($product, "dark"){
+//             --product-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($border, "dark"){
+//             --border-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($icon_dynamic, "dark"){
+//             --icon-dynamic-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($icon_static, "dark"){
+//             --icon-static-color-#{$name} : #{$color};
+//         }
+
+//         @each $name, $color in map-get($typography, "dark"){
+//             --typography-color-#{$name} : #{$color};
+//         }
+//     --theme : 'dark';
+//     }
+// }
+
+// Typography
+
+@font-face {
+    font-family: 'Maison Neue Extended';
+    src: 
+        url('https://asphalt.gojek.io/assets/fonts/MaisonNeueExtended-Bold.woff2') format('woff2'),
+         url('https://asphalt.gojek.io/assets/fonts/MaisonNeueExtended-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: 
+        url('https://asphalt.gojek.io/assets/fonts/MaisonNeue-Book.woff2') format('woff2'),
+         url('https://asphalt.gojek.io/assets/fonts/MaisonNeue-Book.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src:
+        url('https://asphalt.gojek.io/assets/fonts/MaisonNeue-Demi.woff2') format('woff2'),
+         url('https://asphalt.gojek.io/assets/fonts/MaisonNeue-Demi.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src:
+        url('https://asphalt.gojek.io/assets/fonts/MaisonNeue-Bold.woff2') format('woff2'),
+         url('https://asphalt.gojek.io/assets/fonts/MaisonNeue-Bold.woff') format('woff');
+    font-weight: 700;
+}

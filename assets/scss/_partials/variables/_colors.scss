@@ -1,0 +1,352 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+@use "sass:map";
+@import '_variables_raw';
+
+// FUNCTION MAP DEEP GET
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+      $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+// ------------------------------------------------//
+//                    LIGHT MODE                   //
+// ------------------------------------------------//
+
+// Fill Active Colors
+
+$active: (
+    light: (
+        "primary": $light-fill-active-primary,
+        "secondary": $light-fill-active-secondary
+    ),
+    dark: (
+        "primary": $dark-fill-active-primary,
+        "secondary": $dark-fill-active-secondary
+    ),
+);
+
+@function getColor($color-name){
+    @return var(--active-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($active, "light") {
+    .fill-active-#{$key}{
+        background: getColor($key);
+    }
+}
+
+// Fill Inactive Colors
+
+$inactive: (
+    light: (
+        "primary": $light-fill-inactive-primary,
+        "secondary": $light-fill-inactive-secondary
+    ),
+    dark: (
+        "primary": $dark-fill-inactive-primary,
+        "secondary": $dark-fill-inactive-secondary
+    ),
+);
+
+@function getColor($color-name){
+    @return var(--inactive-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($inactive, "light") {
+    .fill-inactive-#{$key}{
+        background: getColor($key);
+    }
+}
+
+
+// Fill Background Colors
+
+$background: (
+    light: (
+        "primary": $light-fill-background-primary,
+        "secondary": $light-fill-background-secondary,
+        "tertiary": $light-fill-background-tertiary,
+        "quaternary": $light-fill-background-quaternary
+    ),
+    dark: (
+        "primary": $dark-fill-background-primary,
+        "secondary": $dark-fill-background-secondary,
+        "tertiary": $dark-fill-background-tertiary,
+        "quaternary": $dark-fill-background-quaternary
+    )
+);
+
+@function getColor($color-name){
+    @return var(--background-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($background, "light") {
+    .fill-background-#{$key}{
+        background: getColor($key);
+    }
+}
+
+
+// Fill Mute Colors
+
+$mute: (
+    light: (
+        "primary": $light-fill-mute-primary,
+        "secondary": $light-fill-mute-secondary
+    ),
+    dark: (
+        "primary": $dark-fill-mute-primary,
+        "secondary": $dark-fill-mute-secondary
+    )
+);
+
+@function getColor($color-name){
+    @return var(--mute-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($mute, "light") {
+    .fill-mute-#{$key}{
+        background: getColor($key);
+    }
+}
+
+
+// Fill Pressed Colors
+
+$pressed: (
+    light: (
+        "pressed": $light-fill-pressed
+    ),
+    dark: (
+        "pressed": $dark-fill-pressed
+    )
+);
+
+@function getColor($color-name){
+    @return var(--#{$color-name}-color);
+}
+
+@each $key, $val in map-deep-get($pressed, "light") {
+    .fill-#{$key}{
+        background: getColor($key);
+    }
+}
+
+
+// Fill Overlay Colors
+
+$overlay: (
+    light: (
+        "overlay": $light-fill-overlay
+    ),
+    dark: (
+        "overlay": $dark-fill-overlay
+    )
+);
+
+@function getColor($color-name){
+    @return var(--#{$color-name}-color);
+}
+
+@each $key, $val in map-deep-get($overlay, "light") {
+    .fill-#{$key}{
+        background: getColor($key);
+    }
+}
+
+
+// Fill Error Colors
+
+$error: (
+    light: (
+        "primary": $light-fill-error-primary,
+        "secondary": $light-fill-error-secondary
+    ),
+    dark: (
+        "primary": $dark-fill-error-primary,
+        "secondary": $dark-fill-error-secondary
+    )
+);
+
+@function getColor($color-name){
+    @return var(--error-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($error, "light") {
+    .fill-error-#{$key}{
+        background: getColor($key);
+    }
+}
+
+
+// Fill Product Colors
+
+$product: (
+    light: (
+        "payments": $light-fill-product-payments,
+        "fmcg": $light-fill-product-fmcg,
+        "daily-needs": $light-fill-product-daily-needs
+    ),
+    dark: (
+        "payments": $dark-fill-product-payments,
+        "fmcg": $dark-fill-product-fmcg,
+        "daily-needs": $dark-fill-product-daily-needs
+    )
+);
+
+@function getColor($color-name){
+    @return var(--product-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($product, "light") {
+    .fill-product-#{$key}{
+        background: getColor($key);
+    }
+}
+
+
+// Border Colors
+
+$border: (
+    light: (
+        "active": $light-border-active,
+        "inactive": $light-border-inactive,
+        "focus": $light-border-focus,
+        "mute-primary": $light-border-mute-primary,
+        "pressed": $light-border-pressed,
+        "static-white": $light-border-static-white,
+        "error": $light-border-error
+    ),
+    dark: (
+        "active": $dark-border-active,
+        "inactive": $dark-border-inactive,
+        "focus": $dark-border-focus,
+        "mute-primary": $dark-border-mute-primary,
+        "pressed": $dark-border-pressed,
+        "static-white": $dark-border-static-white,
+        "error": $dark-border-error
+    )
+);
+
+@function getColor($color-name){
+    @return var(--border-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($border, "light") {
+    .border-#{$key}{
+        border: 1px solid getColor($key);
+    }
+}
+
+
+// Icon Dynamic Colors
+
+$icon_dynamic: (
+    light: (
+        "default": $light-icon-dynamic-default,
+        "active": $light-icon-dynamic-active,
+        "inactive": $light-icon-dynamic-inactive,
+        "inverted": $light-icon-dynamic-inverted,
+        "error": $light-icon-dynamic-error
+    ),
+    dark: (
+        "default": $dark-icon-dynamic-default,
+        "active": $dark-icon-dynamic-active,
+        "inactive": $dark-icon-dynamic-inactive,
+        "inverted": $dark-icon-dynamic-inverted,
+        "error": $dark-icon-dynamic-error
+    )
+);
+
+@function getColor($color-name){
+    @return var(--icon-dynamic-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($icon_dynamic, "light") {
+    .icon-dynamic-#{$key}{
+        color: getColor($key);
+    }
+}
+
+
+// Icon Static Colors
+
+$icon_static: (
+    light: (
+        "transport-logistic": $light-icon-static-transport-logistic,
+        "payments": $light-icon-static-payments,
+        "fmcg": $light-icon-static-fmcg,
+        "daily-needs": $light-icon-static-daily-needs,
+        "news-entertainment": $light-icon-static-news-entertainment,
+        "business": $light-icon-static-business,
+        "black": $light-icon-static-black,
+        "white": $light-icon-static-white,
+        "inactive": $light-icon-static-inactive
+    ),
+    dark: (
+        "transport-logistic": $dark-icon-static-transport-logistic,
+        "payments": $dark-icon-static-payments,
+        "fmcg": $dark-icon-static-fmcg,
+        "daily-needs": $dark-icon-static-daily-needs,
+        "news-entertainment": $dark-icon-static-news-entertainment,
+        "business": $dark-icon-static-business,
+        "black": $dark-icon-static-black,
+        "white": $dark-icon-static-white,
+        "inactive": $dark-icon-static-inactive
+    )
+);
+
+@function getColor($color-name){
+    @return var(--icon-static-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($icon_static, "light") {
+    .icon-static-#{$key}{
+        color: getColor($key);
+    }
+}
+
+
+// Typography Colors
+
+$typography: (
+    light: (
+        "default-title": $light-typography-default-title,
+        "default-body": $light-typography-default-body,
+        "default-caption": $light-typography-default-caption,
+        "active": $light-typography-active,
+        "inactive": $light-typography-inactive,
+        "error": $light-typography-error,
+        "static-white": $light-typography-static-white,
+        "inverted": $light-typography-inverted
+    ),
+    dark: (
+        "default-title": $dark-typography-default-title,
+        "default-body": $dark-typography-default-body,
+        "default-caption": $dark-typography-default-caption,
+        "active": $dark-typography-active,
+        "inactive": $dark-typography-inactive,
+        "error": $dark-typography-error,
+        "static-white": $dark-typography-static-white,
+        "inverted": $dark-typography-inverted
+    )
+);
+
+@function getColor($color-name){
+    @return var(--typography-color-#{$color-name});
+}
+
+@each $key, $val in map-deep-get($typography, "light") {
+    .typography-#{$key}{
+        color: getColor($key);
+    }
+}
