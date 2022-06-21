@@ -56,9 +56,20 @@
                                 <h1>
                                     Tolong kecilin musiknya
                                 </h1>
-                                <h5>
+                                <h5 class="mb-4">
                                     Please turn down the volume
                                 </h5>
+
+                                <!-- Circular button -->
+                                <div class="expand-collapse">
+                                    <span id="see-others">
+                                        See other signs
+                                    </span>
+                                    <span id="close-expand" class="d-none">
+                                        Close
+                                    </span>
+                                </div>
+                                <!-- Circular button end -->
                             </div>
                             <div class="image">
                                 <img src="assets/images/hero.svg" alt="" class="img-fluid">
@@ -139,17 +150,6 @@
         </footer>
     </div>
     <!-- Sidebar end -->
-
-    <!-- Circular button -->
-    <div class="expand-collapse">
-        <span id="see-others">
-            See other signs
-        </span>
-        <span id="close-expand" class="d-none">
-            Close
-        </span>
-    </div>
-    <!-- Circular button end -->
 
     <!-- Bottom card -->
     <div class="sidebar bottom px-4">
@@ -278,6 +278,14 @@
         </section>
     </div>
 
+    <!-- Circular button -->
+    <div class="expand-collapse float d-none" id="float-close">
+        <span id="close-expand">
+            Close
+        </span>
+    </div>
+    <!-- Circular button end -->
+
     <div class="overlay d-none"></div>
     <!-- End Bottom Card -->
 
@@ -320,6 +328,7 @@
                 // $(this).toggleClass("open");
                 $('#see-others').toggleClass("d-none");
                 $('#close-expand').toggleClass("d-none");
+                $('#float-close').toggleClass("d-none");
                 $('.overlay').toggleClass("d-none");
                 $('.sidebar.bottom').toggleClass("showing");
                 $(this).toggleClass("top");
