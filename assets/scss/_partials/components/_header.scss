@@ -106,6 +106,8 @@ left: 50%;
 
 .sidebar{
     // display: none;
+    touch-action: none;
+-ms-touch-action: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -127,6 +129,8 @@ left: 50%;
     }
     &.open{
         // display: block;
+        touch-action: none;
+-ms-touch-action: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -160,6 +164,8 @@ left: 50%;
         box-shadow: 2px 0px 20px rgb(0 0 0 / 20%);
         border-radius: 20px;
         z-index: 9999999;
+        touch-action: none;
+-ms-touch-action: none;
         &.showing{
             transform: translateY(80px);
         }
@@ -188,4 +194,6 @@ left: 50%;
     -o-transition: .45s ease-in-out;
     transition: .45s ease-in-out;
     transition-delay: .5s;
+    touch-action: none;
+-ms-touch-action: none;
 }
