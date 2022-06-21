@@ -118,7 +118,7 @@
 }
 
 .sign-details{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     overflow: hidden;
     touch-action: none;
@@ -127,7 +127,7 @@ min-height: -webkit-fill-available;
 }
 
 .sign-detail{
-    height: calc(100vh - 78px);
+    height: 100%;
     overflow: hidden;
     touch-action: none;
 -ms-touch-action: none;
