@@ -6,7 +6,30 @@
  * @copyright      Copyright (c) http://gojek.design 
 */
 
+.categories-page{
+    @include device(tablet){
+        height: 100vh;
+        overflow: hidden;
+    }
+    @include device(mobile){
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
 .home{
+    &.categories{
+        @include device(tablet){
+            overflow-y: scroll;
+            height: 100vh;
+            padding-bottom: 5rem;
+        }
+        @include device(mobile){
+            overflow-y: scroll;
+            height: 100vh;
+            padding-bottom: 5rem;
+        }
+    }
     .hero{
         background: $light-icon-static-transport-logistic;
         padding: 2rem 0 0;
@@ -98,6 +121,7 @@
 }
 
 .sign-detail{
+    height: calc(100vh - 78px);
     section{
         padding: 0;
     }
