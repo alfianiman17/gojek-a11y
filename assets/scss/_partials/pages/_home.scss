@@ -24,7 +24,7 @@
         @include device(tablet){
             overflow-y: scroll;
             height: 100vh;
-            padding-bottom: 5rem;
+            padding-bottom: 9rem;
             min-height: -webkit-fill-available;
         }
         @include device(mobile){
@@ -121,11 +121,15 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    touch-action: none;
+-ms-touch-action: none;
 }
 
 .sign-detail{
     height: calc(100vh - 78px);
     overflow: hidden;
+    touch-action: none;
+-ms-touch-action: none;
     section{
         padding: 0;
     }
