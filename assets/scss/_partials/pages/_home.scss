@@ -123,6 +123,7 @@
     overflow: hidden;
     touch-action: none;
 -ms-touch-action: none;
+min-height: -webkit-fill-available;
 }
 
 .sign-detail{
@@ -130,6 +131,7 @@
     overflow: hidden;
     touch-action: none;
 -ms-touch-action: none;
+min-height: -webkit-fill-available;
     section{
         padding: 0;
     }
