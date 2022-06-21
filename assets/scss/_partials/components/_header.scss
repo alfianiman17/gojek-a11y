@@ -105,7 +105,7 @@ left: 50%;
 }
 
 .sidebar{
-    display: none;
+    // display: none;
     touch-action: none;
 -ms-touch-action: none;
     position: absolute;
@@ -129,7 +129,7 @@ left: 50%;
         transform: translateX(-500px);
     }
     &.open{
-        display: block;
+        // display: block;
         touch-action: none;
 -ms-touch-action: none;
         position: absolute;
@@ -167,7 +167,6 @@ left: 50%;
         z-index: 9999999;
         touch-action: none;
 -ms-touch-action: none;
-display: none;
         &.showing{
             transform: translateY(80px);
             display: block;
