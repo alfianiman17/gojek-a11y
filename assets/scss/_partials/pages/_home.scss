@@ -10,10 +10,12 @@
     @include device(tablet){
         height: 100vh;
         overflow: hidden;
+        min-height: -webkit-fill-available;
     }
     @include device(mobile){
         height: 100vh;
         overflow: hidden;
+        min-height: -webkit-fill-available;
     }
 }
 
@@ -23,6 +25,7 @@
             overflow-y: scroll;
             height: 100vh;
             padding-bottom: 5rem;
+            min-height: -webkit-fill-available;
         }
         @include device(mobile){
             overflow-y: scroll;
