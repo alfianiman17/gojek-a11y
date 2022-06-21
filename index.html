@@ -45,6 +45,21 @@
         </section>
         <!-- HERO END -->
 
+        <section class="pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="info">
+                            <p>
+                                Use full screen mode for better experience
+                            </p>
+                            <button class="btn btn-tiny btn-primary" id="goFS">Go fullscreen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CATEGORIES -->
         <section class="categories">
             <div class="container">
@@ -156,6 +171,15 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var goFS = document.getElementById("goFS");
+        goFS.addEventListener("click", function() {
+            
+        const elem = document.documentElement;
+        if (elem.requestFullscreen) {elem.requestFullscreen()}
+        
+        }, false);
+    </script>
     <!-- scripts end -->
 </body>
 

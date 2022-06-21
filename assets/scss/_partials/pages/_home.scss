@@ -223,3 +223,21 @@
         display: none;
     }
 }
+
+.info{
+    padding: 1rem;
+    background: $light-fill-active-secondary;
+    border-radius: 20px;
+}
+
+.btn{
+    &-tiny{
+        border-radius: 40px;
+        border: none;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
