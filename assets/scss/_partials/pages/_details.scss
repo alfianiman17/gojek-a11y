@@ -1,0 +1,25 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Interaction Designer
+ * @copyright      Copyright (c) http://gojek.design 
+*/
+
+.sign-details{
+    &.general{
+        background: #BAD97F;
+    }
+    &.navigation{
+        background: #F8E482;
+    }
+    &.ac{
+        background: #F1AF3E;
+    }
+    &.music{
+        background: #C6A5C9;
+    }
+    &.others{
+        background: #B1E1ED;
+    }
+}
