@@ -189,7 +189,7 @@ left: 50%;
         height: 100vh;
         padding: 1.5rem;
         box-shadow: 2px 0px 20px rgb(0 0 0 / 20%);
-        border-radius: 20px 20px 0 0;
+        // border-radius: 20px 20px 0 0;
         z-index: 9999999;
         touch-action: none;
         -ms-touch-action: none;
@@ -205,6 +205,9 @@ left: 50%;
             // overflow: scroll;
             // overflow-x: hidden;
             // padding-bottom: 13rem;
+        }
+        &.general{
+            background: #D3F2AC;
         }
     }
 }

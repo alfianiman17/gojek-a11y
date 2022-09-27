@@ -477,23 +477,37 @@
     <!-- main container end -->
 
     <!-- Detail card -->
-    <div class="sidebar details px-4">
+    <div class="sidebar details general px-4">
         <div class="title-card">
             <div class="container px-0">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="assets/images/illustrations-new/welcome_screen.svg" alt="">
-                        <h5 class="mb-3">
-                            <b>
-                                Selamat datang di trip spesial Gojek
-                            </b>
-                        </h5>
-                        <p>
-                            Drivermu tunarungu. Biar bisa lebih mudah berkomunikasi dengan beliau, nih kami siapkan panduan bahasa isyarat untukmu.
-                        </p>
-                        <a href="" class="btn btn-primary w-100">
-                            Cek Panduan
-                        </a>
+                        <div class="close-btn">
+                            <img src="assets/images/illustrations-new/ic_cancel.svg">
+                        </div>
+                        <div class="image-detail">
+                            <img src="assets/images/illustrations-new/big/ac/besarin_ac.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="sign-detail">
+                            <section>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="content-detail new">
+                                                <div class="text">
+                                                    <h1>
+                                                        Besarin AC-nya
+                                                    </h1>
+                                                    <h5 class="mb-4">
+                                                        Lower the AC
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -617,6 +631,11 @@
             });
 
             $('.toggle_details').click(function(){
+                $('.sidebar.details').toggleClass("showing");
+                $('.overlay_details').toggleClass("d-none");
+            });
+
+            $('.close-btn').click(function(){
                 $('.sidebar.details').toggleClass("showing");
                 $('.overlay_details').toggleClass("d-none");
             });
