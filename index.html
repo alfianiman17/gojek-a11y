@@ -20,110 +20,517 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light justify-content-center">
+            <a class="navbar-brand" href="#">
+                <h5 class="fw-bold mb-0">
+                    #HilangkanBatasan
+                </h5>
+            </a>
+            <!-- <a href="javascript:void(0)" id="see-others">
+                <img src="assets/images/ic_help.svg">
+            </a> -->
+            <!-- Circular button -->
+            <div class="expand-collapse">
+                <span id="see-others">
+                    <img src="assets/images/ic_help.svg">
+                </span>
+            </div>
+            <!-- Circular button end -->
+        </nav>
+
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-general-tab" data-bs-toggle="tab" data-bs-target="#nav-general" type="button" role="tab" aria-controls="nav-general" aria-selected="true">
+                    <img src="assets/images/ic_chat_active.svg" class="icon-active">
+                    <img src="assets/images/ic_chat_inactive.svg" class="icon-inactive">
+                    <h6>
+                        Umum
+                    </h6>
+                </button>
+                <button class="nav-link" id="nav-navigation-tab" data-bs-toggle="tab" data-bs-target="#nav-navigation" type="button" role="tab" aria-controls="nav-navigation" aria-selected="false">
+                    <img src="assets/images/ic_map_active.svg" class="icon-active">
+                    <img src="assets/images/ic_map_inactive.svg" class="icon-inactive">
+                    <h6>
+                        Navigasi
+                    </h6>
+                </button>
+                <button class="nav-link" id="nav-ac_audio-tab" data-bs-toggle="tab" data-bs-target="#nav-ac_audio" type="button" role="tab" aria-controls="nav-ac_audio" aria-selected="false">
+                    <img src="assets/images/ic_shuffle_active.svg" class="icon-active">
+                    <img src="assets/images/ic_shuffle_inactive.svg" class="icon-inactive">
+                    <h6>
+                        AC & Audio
+                    </h6>
+                </button>
+                <button class="nav-link" id="nav-others-tab" data-bs-toggle="tab" data-bs-target="#nav-others" type="button" role="tab" aria-controls="nav-others" aria-selected="false">
+                    <img src="assets/images/ic_more_active.svg" class="icon-active">
+                    <img src="assets/images/ic_more_inactive.svg" class="icon-inactive">
+                    <h6>
+                        Lainnya
+                    </h6>
+                </button>
+            </div>
+        </nav>
+    </header>
+
     <!-- main container start -->
     <main class="home">
-        <!-- HERO -->
-        <section class="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5">
-                        <img src="assets/images/hero.svg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-7 d-flex align-items-center">
-                        <div class="content">
-                            <img src="assets/images/logo_gojek_white.svg" alt="" class="img-fluid mb-2">
-                            <h1>
-                                Welcome to a special ride
-                            </h1>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab" tabindex="0">
+                <section class="categories">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <a href="javascript:void(0)" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center toggle_details">
+                                    <img src="assets/images/illustrations-new/small/general/halo.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Halo
+                                        </h6>
+                                        <p>
+                                            Hello
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/general/mohon_tunggu.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/general/mohon_tunggu.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Mohon tunggu
+                                        </h6>
+                                        <p>
+                                            Please wait
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/general/terima_kasih.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/general/terima_kasih.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Terima kasih
+                                        </h6>
+                                        <p>
+                                            Thank you
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/general/sama_sama.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/general/sama_sama.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Sama-sama
+                                        </h6>
+                                        <p>
+                                            You’re welcome
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/general/maaf.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/general/maaf.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Maaf
+                                        </h6>
+                                        <p>
+                                            I’m sorry
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/general/selamat_tinggal.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/general/selamat_tinggal.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Selamat tinggal
+                                        </h6>
+                                        <p>
+                                            Goodbye
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/general/ya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/general/ya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Ya
+                                        </h6>
+                                        <p>
+                                            Yes
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/general/tidak.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/general/tidak.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Tidak
+                                        </h6>
+                                        <p>
+                                            No
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <!-- <p>
-                            Here you can learn and practice sign language to communicate with your deaf driver.
-                        </p> -->
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
-        <!-- HERO END -->
-
-        <section class="pb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="info">
-                            <small class="mb-0">
-                                Here you can learn and practice sign language to communicate with your deaf driver.
-                            </small>
-                            <!-- <button class="btn btn-tiny btn-primary" id="goFS">Go fullscreen</button> -->
+            <div class="tab-pane fade" id="nav-navigation" role="tabpanel" aria-labelledby="nav-navigation-tab" tabindex="0">
+                <section class="categories">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/belok_kanan.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/belok_kanan.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Belok kanan
+                                        </h6>
+                                        <p>
+                                            Turn right
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/belok_kiri.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/belok_kiri.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Belok kiri
+                                        </h6>
+                                        <p>
+                                            Turn left
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/lurus_terus.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/lurus_terus.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Lurus terus
+                                        </h6>
+                                        <p>
+                                            Go straight
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/putar_balik.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/putar_balik.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Putar balik
+                                        </h6>
+                                        <p>
+                                            Make a U-turn
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/pelan_pelan.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/pelan_pelan.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Pelan-pelan
+                                        </h6>
+                                        <p>
+                                            Slow down
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/berhenti.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/berhenti.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Berhenti
+                                        </h6>
+                                        <p>
+                                            Stop
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/lokasi_sesuai_map.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/lokasi_sesuai_map.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Lokasi sesuai map
+                                        </h6>
+                                        <p>
+                                            Location is as per map
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/navigation/mau_ganti_tujuan.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/navigation/mau_ganti_tujuan.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Mau ganti tujuan
+                                        </h6>
+                                        <p>
+                                            Change the destination
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
-
-        <!-- CATEGORIES -->
-        <section class="categories">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-4">
-                        <a href="categories/general.html" class="card card-category">
-                            <img class="card-img-top" src="assets/images/motorcycle.svg" alt="">
-                            <div class="card-body">
-                                <h5>
-                                    General
-                                </h5>
+            <div class="tab-pane fade" id="nav-ac_audio" role="tabpanel" aria-labelledby="nav-ac_audio-tab" tabindex="0">
+                <section class="categories">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <a href="../details/ac/besarin_ac.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/ac/besarin_ac.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Besarin AC-nya
+                                        </h6>
+                                        <p>
+                                            Lower the AC
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <a href="categories/navigation.html" class="card card-category">
-                            <img class="card-img-top" src="assets/images/motorcycle.svg" alt="">
-                            <div class="card-body">
-                                <h5>
-                                    Navigation
-                                </h5>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/ac/kecilin_ac.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/ac/kecilin_ac.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Kecilin AC-nya
+                                        </h6>
+                                        <p>
+                                            Raise the AC
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <a href="categories/ac.html" class="card card-category">
-                            <img class="card-img-top" src="assets/images/motorcycle.svg" alt="">
-                            <div class="card-body">
-                                <h5>
-                                    Air Conditioner
-                                </h5>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/music/kecilin_musiknya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/music/kecilin_musiknya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Kecilin musiknya
+                                        </h6>
+                                        <p>
+                                            Turn down the volume
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <a href="categories/music.html" class="card card-category">
-                            <img class="card-img-top" src="assets/images/motorcycle.svg" alt="">
-                            <div class="card-body">
-                                <h5>
-                                    Music
-                                </h5>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/music/besarin_musiknya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/music/besarin_musiknya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Besarin musiknya
+                                        </h6>
+                                        <p>
+                                            Turn up the volume
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <a href="categories/others.html" class="card card-category">
-                            <img class="card-img-top" src="assets/images/motorcycle.svg" alt="">
-                            <div class="card-body">
-                                <h5>
-                                    Others
-                                </h5>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/music/nyalakan_musiknya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/music/nyalakan_musiknya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Nyalakan musiknya
+                                        </h6>
+                                        <p>
+                                            Turn on the music
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/music/matikan_musiknya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/music/matikan_musiknya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Matikan musiknya
+                                        </h6>
+                                        <p>
+                                            Turn off the music
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/music/ubah_radionya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/music/ubah_radionya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Ubah radionya
+                                        </h6>
+                                        <p>
+                                            Change the radio frequency
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
-        <!-- END CATEGORIES -->
-
+            <div class="tab-pane fade" id="nav-others" role="tabpanel" aria-labelledby="nav-others-tab" tabindex="0">
+                <section class="categories">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <a href="../details/others/simpan_kembaliannya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/others/simpan_kembaliannya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Simpan kembaliannya
+                                        </h6>
+                                        <p>
+                                            Keep the change
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/others/ini_ongkos_tolnya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/others/ini_ongkos_tolnya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Ini ongkos tolnya
+                                        </h6>
+                                        <p>
+                                            Here is the toll fee
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/others/ini_ongkos_parkirnya.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/others/ini_ongkos_parkirnya.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Ini ongkos parkirnya
+                                        </h6>
+                                        <p>
+                                            Here is the parking fee
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/others/tip_pakai_gopay.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/others/tip_pakai_gopay.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Tip pakai GoPay
+                                        </h6>
+                                        <p>
+                                            Tip is using GoPay
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <a href="../details/others/gak_bawa_kartu_tol.html" class="card card-listing d-flex flex-row flex-md-column-reverse justify-content-center align-items-center align-items-md-center">
+                                    <img src="assets/images/illustrations-new/small/others/gak_bawa_kartu_tol.svg" alt="">
+                                    <div class="card-body">
+                                        <h6>
+                                            Gak bawa kartu tol
+                                        </h6>
+                                        <p>
+                                            I don't have a toll card
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     <!-- main container end -->
 
+    <!-- Detail card -->
+    <div class="sidebar details px-4">
+        <div class="title-card">
+            <div class="container px-0">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="assets/images/illustrations-new/welcome_screen.svg" alt="">
+                        <h5 class="mb-3">
+                            <b>
+                                Selamat datang di trip spesial Gojek
+                            </b>
+                        </h5>
+                        <p>
+                            Drivermu tunarungu. Biar bisa lebih mudah berkomunikasi dengan beliau, nih kami siapkan panduan bahasa isyarat untukmu.
+                        </p>
+                        <a href="" class="btn btn-primary w-100">
+                            Cek Panduan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Detail card -->
+
+    <!-- Bottom card -->
+    <div class="sidebar bottom px-4">
+        <div class="title-card">
+            <div class="container px-0">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="assets/images/illustrations-new/welcome_screen.svg" alt="">
+                        <h5 class="mb-3">
+                            <b>
+                                Selamat datang di trip spesial Gojek
+                            </b>
+                        </h5>
+                        <p>
+                            Drivermu tunarungu. Biar bisa lebih mudah berkomunikasi dengan beliau, nih kami siapkan panduan bahasa isyarat untukmu.
+                        </p>
+                        <a href="" class="btn btn-primary w-100">
+                            Cek Panduan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay d-none"></div>
+    <div class="overlay_details d-none"></div>
+    <!-- End Bottom Card -->
+
     <!-- footer starts -->
-    <footer>
+    <!-- <footer>
         <div class="footer-bottom">
             <div class="made-by typography-default-caption">
                 <span>
@@ -146,7 +553,7 @@
                 </span>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- footer ends -->
 
     <!-- WARNING -->
@@ -172,13 +579,54 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        // var goFS = document.getElementById("goFS");
-        // goFS.addEventListener("click", function() {
-            
-        // const elem = document.documentElement;
-        // if (elem.requestFullscreen) {elem.requestFullscreen()}
-        
-        // }, false);
+        $(document).ready(function(){
+            $('#sidebar-toggler').click(function(){
+                $(this).toggleClass("open");
+                $('.sidebar').toggleClass("open");
+            });
+
+            $('.expand-collapse').click(function(){
+                // $(this).toggleClass("open");
+                // $('#see-others').toggleClass("d-none");
+                // $('#close-expand').toggleClass("d-none");
+                $('#float-close').toggleClass("d-none");
+                $('.overlay').toggleClass("d-none");
+                $('.sidebar.bottom').toggleClass("showing");
+                $(this).toggleClass("top");
+                $('body').toggleClass("fix");
+            });
+
+            $('.overlay').click(function(){
+                // $(this).toggleClass("open");
+                // $('#see-others').toggleClass("d-none");
+                // $('#close-expand').toggleClass("d-none");
+                $('#float-close').toggleClass("d-none");
+                $('.overlay').toggleClass("d-none");
+                $('.sidebar.bottom').toggleClass("showing");
+                $(this).toggleClass("top");
+            });
+
+            $('.btn-primary').click(function(){
+                // $(this).toggleClass("open");
+                // $('#see-others').toggleClass("d-none");
+                // $('#close-expand').toggleClass("d-none");
+                $('#float-close').toggleClass("d-none");
+                $('.overlay').toggleClass("d-none");
+                $('.sidebar.bottom').toggleClass("showing");
+                $(this).toggleClass("top");
+            });
+
+            $('.toggle_details').click(function(){
+                $('.sidebar.details').toggleClass("showing");
+                $('.overlay_details').toggleClass("d-none");
+            });
+
+            $('.overlay_details').click(function(){
+                $('.sidebar.details').toggleClass("showing");
+                $('.overlay_details').toggleClass("d-none");
+            });
+        });
+
         window.addEventListener("load",function() {
             setTimeout(function(){
                 // This hides the address bar:

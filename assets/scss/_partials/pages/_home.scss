@@ -65,12 +65,18 @@
 }
 
 .categories{
+    padding-bottom: 0;
+    overflow-y: scroll;
+    height: calc(100vh - 160px);
+    // overflow: hidden;
+    // padding-top: 160px;
     .card{
         border-radius: 24px;
         text-align: center;
         margin-bottom: 1.5rem;
         text-decoration: none;
-        h5{
+        border: none;
+        h6{
             font-weight: 600;
             margin-bottom: 0;
             @include device(tablet){
@@ -79,7 +85,10 @@
             }
         }
         p{
+            font-size: 14px;
             margin-bottom: 0;
+            color: #717171;
+            font-weight: 300;
         }
         &-category{
             @include device(tablet){
@@ -95,12 +104,12 @@
                 min-height: 266px;
             }
             @include device(mobile){
-                // padding: 1rem;
+                padding: 1rem;
                 text-align: start;
             }
             img{
                 @include device(mobile){
-                    height: 76px;
+                    height: 64px;
                 } 
             }
             .card-body{
@@ -110,7 +119,9 @@
                     flex-direction: column;
                 }
                 @include device(mobile){
-                    padding: 1rem 1rem 1rem 2rem;
+                    // padding: 1rem 1rem 1rem 2rem;
+                    padding: 0;
+                    padding-left: 1rem;
                 }
             }
         }
@@ -176,7 +187,7 @@ min-height: -webkit-fill-available;
     }
 }
 
-.expand-collapse{
+.expand-collapsed{
     // position: absolute;
     // bottom: 0;
     // right: 0;
@@ -195,6 +206,43 @@ min-height: -webkit-fill-available;
     // margin-right: 1rem;
     margin: 0 auto;
     font-weight: 600;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    &.float{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9999999;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+}
+
+.expand-collapse{
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    // z-index: 9999999;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // padding: 1rem;
+    // background: #ffffff;
+    // box-shadow: 2px 0px 20px rgb(0 0 0 / 10%);
+    // width: max-content;
+    // height: 50px;
+    // border-radius: 28px;
+    // margin-bottom: 1rem;
+    // margin-left: auto;
+    // margin-right: 1rem;
+    // margin: 0 auto;
+    // font-weight: 600;
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
