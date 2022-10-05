@@ -9,11 +9,13 @@
 .categories-page{
     @include device(tablet){
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
         min-height: -webkit-fill-available;
     }
     @include device(mobile){
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
         min-height: -webkit-fill-available;
     }
@@ -24,12 +26,14 @@
         @include device(tablet){
             overflow-y: scroll;
             height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             padding-bottom: 9rem;
             min-height: -webkit-fill-available;
         }
         @include device(mobile){
             overflow-y: scroll;
             height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             padding-bottom: 9rem;
         }
     }
@@ -195,6 +199,7 @@ min-height: -webkit-fill-available;
         &.new{
             position: relative;
             height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             padding-bottom: 0;
             display: flex;
             justify-content: center;
@@ -311,6 +316,7 @@ min-height: -webkit-fill-available;
 .warning{
     background: $light-icon-static-transport-logistic;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
     overflow: hidden;
     position: absolute;
