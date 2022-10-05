@@ -16,6 +16,7 @@ body{
     height: 100vh;
     overflow: hidden;
     overscroll-behavior-y: contain; // Disable pull to refresh
+    font: 600 16px/24px "Maison Neue" !important;
     &.fix{
         width: 100vw;
         height: calc(100vh);
