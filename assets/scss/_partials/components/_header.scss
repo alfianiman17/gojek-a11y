@@ -123,12 +123,12 @@ left: 50%;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-    @include device(tablet){
-        transform: translateX(-1000px);
-    }
-    @include device(mobile){
-        transform: translateX(-500px);
-    }
+    // @include device(tablet){
+    //     transform: translateX(-1000px);
+    // }
+    // @include device(mobile){
+    //     transform: translateX(-500px);
+    // }
     &.open{
         // display: block;
         touch-action: none;
@@ -160,7 +160,10 @@ left: 50%;
         }
     }
     &.bottom{
-        transform: translateY(1400px);
+        // transform: translateY(1400px);
+        position: absolute;
+        bottom: -100%;
+        left: 0;
         opacity: 0;
         height: max-content;
         padding: 1.5rem;
@@ -170,7 +173,7 @@ left: 50%;
         touch-action: none;
         -ms-touch-action: none;
         &.showing{
-            transform: translateY(0);
+            bottom: 0;
             opacity: 100%;
             display: block;
         }
