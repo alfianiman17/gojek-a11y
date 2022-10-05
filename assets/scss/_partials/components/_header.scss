@@ -182,6 +182,13 @@ left: 50%;
             // overflow-x: hidden;
             // padding-bottom: 13rem;
         }
+        .title-card{
+            p{
+                font-size: 15px;
+                font-weight: 300;
+                color: #767676;
+            }
+        }
     }
     &.details{
         transform: translateY(1400px);
