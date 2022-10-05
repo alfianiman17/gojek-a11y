@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
-<body>
+<body onload="openBottomDialog()">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light justify-content-center">
             <a class="navbar-brand" href="#">
@@ -530,7 +530,7 @@
                         <p>
                             Drivermu tunarungu. Biar bisa lebih mudah berkomunikasi dengan beliau, nih kami siapkan panduan bahasa isyarat untukmu.
                         </p>
-                        <a href="" class="btn btn-primary w-100">
+                        <a href="javascript:void(0)" class="btn btn-primary w-100">
                             Cek Panduan
                         </a>
                     </div>
@@ -578,7 +578,7 @@
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_uj4ithjv.json"  background="transparent"  speed="1"  style="width: 60%; margin: 0 auto;"  loop autoplay></lottie-player> 
                     <h1 class="display-5xl" style="text-align: center; color: #fff; margin-top: 20px;">
-                        This web interface works well only for mobile/tablet :(
+                        This web interface is only available for mobile/tablet :(
                     </h1>
                 </div>
             </div>
@@ -652,6 +652,11 @@
                 window.scrollTo(0, 1);
             }, 0);
         });
+
+        function openBottomDialog() {
+            $('.overlay').toggleClass("d-none");
+            $('.sidebar.bottom').toggleClass("showing");
+        }
     </script>
     <!-- scripts end -->
 </body>
